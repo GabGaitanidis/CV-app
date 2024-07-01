@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: rgb(19, 32, 59);
+}
+
+.body {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 200px;
+  padding: 20px;
+  font-family: "Poppins";
+}
+.container {
+  background-color: rgb(15 23 42);
+}
+.general {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form {
+  width: 50%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 11%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  border-radius: 13px;
+  font-weight: 600;
+  padding: 14px;
+  padding-left: 20px;
+  font-size: 18px;
+  min-width: 30%;
+  color: rgb(243, 169, 33);
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.164);
+}
+.card h1 {
+  text-align: center;
+}
+.inputs {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.card input {
+  background-color: wheat;
+  color: black;
+  width: 60%;
+}
+input {
+  padding: 10px;
+}
+
+.buttons {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  border: none;
+  background-color: var(--main-color);
+  color: rgb(243, 169, 33);
+  padding-left: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  transition: 0.2s ease-out;
+}
+.buttons:hover {
+  opacity: 0.7;
+}
+textarea {
+  height: 100px;
+  resize: none;
+  background-color: rgb(65, 84, 101);
+  color: white;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  margin-left: 2%;
+}
+.section h2 {
+  color: orange;
+}
+.card input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: var(--main-color);
+  color: white;
+}
+.skills-section div {
+  margin-left: 2%;
+}
+.skills-section input {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.dowload-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dowload-section button {
+  background-color: black;
+  color: white;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .body {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+    margin-left: 0%;
+    padding: 0px;
+    margin-bottom: 0%;
+  }
+  .section,
+  .skills-section div {
+    margin-left: 0%;
+  }
+}
+.icon {
+  text-align: center;
+  padding: 20px;
+}
+.skill-btn {
+  border: none;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+svg {
+  height: 60px;
+}
+.form input {
+  background-color: rgb(65, 84, 101);
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+.form input::placeholder {
+  color: white;
+}
+h5 {
+  color: rgba(255, 255, 255, 0.102);
+}
